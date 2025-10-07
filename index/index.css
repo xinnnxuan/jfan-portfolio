@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: 'Didot', serif;
-    background-color: #6d120b;
+    background: radial-gradient(circle at center, #330000 0%, #660000 50%, #660000 100%);
     color: #fbf0d8;
     overflow: hidden;
 }
@@ -119,22 +119,25 @@ body {
     position: absolute;
     top: 0%;
     left: 50%;
-    height: 1000px;
+    height: 1200px;
     transform: translateX(-50%);
 }
 
 .curved-text text {
-    font-size: 60px;
-    fill: white;
+    font-family: 'Limelight', serif;
+    font-size: 150px;
+    font-weight: 900;
+    fill: #fbf0d8;
+    text-anchor: middle;
     letter-spacing: 10px;
     text-transform: uppercase;
-    font-weight: bolder;
+    filter: drop-shadow(6px 6px 12px rgba(0, 0, 0, 0.7));
 }
 
 /* Centered Image */
 .centered-image-container {
     position: absolute;
-    bottom: -50%;
+    bottom: -60%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -144,11 +147,12 @@ body {
 }
 
 .centered-image {
-    max-height: 200vh;
-    max-width: 200w;
+    max-height: 210vh;
+    max-width: 210w;
     width: auto;
     height: auto;
     object-fit: cover;
+    filter: drop-shadow(12px 12px 24px rgba(0, 0, 0, 0.6));
 }
 
 /* Optional Label */
@@ -157,11 +161,14 @@ body {
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 12px 24px;
-    border-radius: 30px;
-    font-size: 18px;
+    background-color: black;
+    padding: 8px 16px;
+    border: 1px solid #fbf0d8;
+    border-radius: 0;
+    font-size: 14px;
     font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #fbf0d8;
     z-index: 3;
 }
 
@@ -207,7 +214,7 @@ body {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border: 3px solid white;
+    border: 3px solid #fbf0d8;
     border-radius: 25px;
     z-index: 1;
 }
@@ -226,7 +233,7 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.1;
-    color: white;
+    color: #fbf0d8;
 }
 
 .headline-line {
@@ -332,6 +339,18 @@ body {
 }
 
 /* Responsive design */
+@media (max-width: 1200px) {
+    .curved-text text {
+        font-size: 200px;
+        letter-spacing: 8px;
+    }
+    
+    .centered-image {
+        max-height: 180vh;
+        max-width: 180vw;
+    }
+}
+
 @media (max-width: 768px) {
     .three-column-layout {
         grid-template-columns: 1fr;
@@ -358,5 +377,27 @@ body {
     .nav-link {
         margin: 0 1rem;
         font-size: 0.8rem;
+    }
+    
+    .curved-text text {
+        font-size: 150px;
+        letter-spacing: 6px;
+    }
+    
+    .centered-image {
+        max-height: 160vh;
+        max-width: 160vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .curved-text text {
+        font-size: 100px;
+        letter-spacing: 4px;
+    }
+    
+    .centered-image {
+        max-height: 140vh;
+        max-width: 140vw;
     }
 }
