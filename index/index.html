@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin-Xuan Fan - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <h1 class="site-title">johannafan</h1>
+        </div>
+        <nav class="header-center">
+            <a href="../about/about.html" class="nav-link">ABOUT</a>
+            <a href="../work/work.html" class="nav-link">PROJECT</a>
+            <a href="../resume/resume.html" class="nav-link">RESUME</a>
+            <a href="../contact/contact.html" class="nav-link">CONTACT</a>
+        </nav>
+        <div class="header-right">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Typewriter Text -->
+        <div class="typewriter-container" id="typewriterContainer">
+            <span class="typewriter-text" id="typewriterText"></span>
+            <span class="cursor">|</span>
+        </div>
+
+        <!-- UGC Portfolio Style Hero Section -->
+        <div class="hero" id="greetingSection">
+            <!-- Curved SVG Text -->
+            <svg viewBox="0 0 500 300" class="curved-text">
+                <defs>
+                  <path id="curve" d="M50,250 A200,200 0 1,1 450,250" />
+                </defs>
+                <text width="500">
+                  <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle">
+                    Xin-Xuan Fan
+                  </textPath>
+                </text>
+              </svg>
+
+            <!-- Centered Image -->
+            <div class="centered-image-container">
+                <img src="Adobe Express - file.png" alt="Xin-Xuan Fan" class="centered-image">
+            </div>
+
+            <!-- Optional Label (like "By Gg Colin") -->
+            <div class="label">Portfolio 2025</div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <h2 class="main-headline">
+                <span class="headline-line">DATA-DRIVEN</span>
+                <span class="headline-line">ANALYST</span>
+                <span class="headline-line">LEADER</span>
+            </h2>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <div class="content-wrapper">
+                <div class="education">
+                    <div class="edu-line">
+                        <span class="asterisk">*</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="edu-text">
+                        <img src="GU-logo.svg" alt="Gonzaga University" class="edu-icon">
+                        <span>GONZAGA UNIVERSITY STUDENT</span>
+                    </div>
+                </div>
+
+                <p class="description">
+                    I create data-driven solutions and foster multicultural communities through AI, automation, and
+                    analytical storytelling. Specializing in customer tech operations, predictive modeling, and
+                    cross-cultural leadership for startups, agencies, and global teams.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="../contact/contact.html" class="btn-primary">Get in touch</a>
+                    <a href="../work/work.html" class="btn-secondary">See work</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
